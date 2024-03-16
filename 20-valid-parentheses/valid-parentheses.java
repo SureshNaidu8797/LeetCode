@@ -8,11 +8,7 @@ class Solution {
             }
             if(st.size()==0)
             return false;
-            if(s.charAt(i)==')' && st.pop()=='(')
-            continue;
-            else if(s.charAt(i)=='}' &&st.pop()=='{')
-            continue;
-            else if(s.charAt(i)==']' &&st.pop()=='[')
+            else if( (s.charAt(i)==')' && st.pop()=='(') || (s.charAt(i)==']' &&st.pop()=='[') || (s.charAt(i)=='}' &&st.pop()=='{') )
             continue;
             else
             return false;
