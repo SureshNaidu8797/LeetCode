@@ -1,19 +1,14 @@
 class Solution {
     public int findMinArrowShots(int[][] points) {
-        int Arrows=1;
-        Arrays.sort(points,Comparator.comparingInt(point -> point[0]));
-        int right=points[0][1];
-        for(int i=0;i<points.length;i++){
-            int ithleft=points[i][0];
-            int ithright=points[i][1];
-            if(right<ithleft){
-                Arrows++;
-                right=ithright;
-            }
-            else{
-                right=Math.min(right,ithright);
+        Arrays.sort(points, (a,b) -> Integer.compare(a[1], b[1]));
+        int arrows = 1;
+        int end = points[0][1];
+        for (int i = 1; i < points.length; i++) {
+            if (points[i][0] > end) {
+                ++arrows;
+                end = points[i][1];
             }
         }
-        return Arrows;
+        return arrows;
     }
 }
