@@ -6,7 +6,6 @@ class Solution {
         int max = 0;
         for (char task : tasks) {
             freq[task - 'A']++;
-            // max = Math.max(max, freq[task - 'A']);
         }
         int numOfElementsWithMaxFreq = 0;
         for (int frequency : freq) {
