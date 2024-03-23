@@ -10,11 +10,12 @@
  */
 class Solution {
     public void reorderList(ListNode head) {
-        // Stack<Integer> st=new Stack<>();
+        if (head.next == null) {
+			return;
+		}
         ArrayList<Integer> arr=new ArrayList<>();
         ListNode temp=head;
         while(temp!=null){
-            // stack.push(temp.val);
             arr.add(temp.val);
             temp=temp.next;
         }
@@ -25,11 +26,8 @@ class Solution {
             temp=temp.next;
             if(temp!=null){
             temp.val=arr.get(s-i);
-            temp=temp.next;}
+            temp=temp.next;
+            }
         }
-        // temp=head;
-        // while(temp!=null){
-        // System.out.println(temp.val);
-        // temp=temp.next;}
     }
 }
