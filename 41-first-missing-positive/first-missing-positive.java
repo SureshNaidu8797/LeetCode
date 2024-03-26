@@ -5,6 +5,7 @@ class Solution {
         arr[j] = temp;
     }
     public int firstMissingPositive(int[] nums) {
+        System.gc();
         int n = nums.length;
         for (int i = 0; i < n; i++) {
             while (nums[i] > 0 && nums[i] <= n && nums[i] != nums[nums[i] - 1]) {
