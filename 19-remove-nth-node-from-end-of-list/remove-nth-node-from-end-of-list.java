@@ -22,7 +22,7 @@ class Solution {
             return null;
         else
             node.next = node.next.next;
-        System.gc();
+        // System.gc();
         return head;
     }
 }
