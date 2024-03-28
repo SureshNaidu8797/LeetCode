@@ -10,7 +10,6 @@ class Solution {
             i--;
             count++;
         }
-        System.gc();
         return count;
     }
 }
