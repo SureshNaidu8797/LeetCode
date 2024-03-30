@@ -12,6 +12,7 @@ class Solution {
                 c=capacity-plants[i];
             }
         }
+        System.gc();
         return count;
     }
 }
