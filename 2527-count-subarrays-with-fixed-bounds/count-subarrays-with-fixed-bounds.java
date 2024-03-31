@@ -7,10 +7,8 @@ class Solution {
     for (int i = 0; i < nums.length; ++i) {
     if (nums[i] < minK || nums[i] > maxK) 
         badIdx = i;
-    if (nums[i] == minK)
-        leftIdx = i;
-    if (nums[i] == maxK)
-        rightIdx = i;
+    leftIdx = nums[i] == minK ? i: leftIdx;
+    rightIdx =nums[i] == maxK ? i: rightIdx;
     res += Math.max(0, Math.min(leftIdx, rightIdx) - badIdx);
     }
     return res;
