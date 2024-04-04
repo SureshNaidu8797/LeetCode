@@ -10,6 +10,7 @@ class Solution {
             else if(c==')')
             count--;
         }
+        System.gc();
         return maxCount;
     }
 }
