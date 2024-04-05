@@ -21,13 +21,10 @@ class Solution {
         return PrevNode;
     }
    public ListNode reverseKGroup(ListNode head, int k) {
-
-        ListNode preTail = null;        // stores the tail node of previous LL.
-        ListNode curHead = head;        // stores the head node of current LL
-        ListNode curTail = head;        // stores the tail node of current LL
-
-        ListNode nextHead = null;       // stores the head node of next LL
-
+        ListNode preTail = null;
+        ListNode curHead = head;
+        ListNode curTail = head;
+        ListNode nextHead = null;
         while(curHead != null)
         {
             int count = 1;
