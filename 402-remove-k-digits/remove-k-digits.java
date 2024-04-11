@@ -1,34 +1,29 @@
 class Solution {
-    public String removeKdigits(String num, int k) {
-        Stack<Character> stack = new Stack<>();
-        
-        for (char digit : num.toCharArray()) {
-            while (!stack.isEmpty() && k > 0 && stack.peek() > digit) {
-                stack.pop();
-                k--;
-            }
-            stack.push(digit);
-        }
-        
-        // Remove remaining k digits from the end of the stack
-        while (k > 0 && !stack.isEmpty()) {
-            stack.pop();
-            k--;
-        }
-        
-        // Construct the resulting string from the stack
-        StringBuilder sb = new StringBuilder();
-        while (!stack.isEmpty()) {
-            sb.append(stack.pop());
-        }
-        sb.reverse(); // Reverse to get the correct order
-        
-        // Remove leading zeros
-        while (sb.length() > 0 && sb.charAt(0) == '0') {
-            sb.deleteCharAt(0);
-        }
-        
-        // Handle edge case where result might be empty
-        return sb.length() > 0 ? sb.toString() : "0";
-    }
+    public static String removeKdigits(String num, int k) {
+		char[] digits = num.toCharArray();
+		if (k == num.length()) {
+			return "0";
+		}
+
+		char[] stack = new char[digits.length];
+		int stackTop = -1;
+		int removalCount = k;
+
+		for (int i = 0; i < digits.length; i++) {
+			while (removalCount > 0 && stackTop >= 0 && stack[stackTop] > digits[i]) {
+				stackTop--;
+				removalCount--;
+			}
+			stackTop++;
+			stack[stackTop] = digits[i];
+		}
+
+		int nonZeroStart = 0;
+
+		while (stack[nonZeroStart] == '0' && nonZeroStart < digits.length - k - 1) {
+			nonZeroStart++;
+		}
+
+		return String.valueOf(stack, nonZeroStart, digits.length - k - nonZeroStart);
+	}	
 }
