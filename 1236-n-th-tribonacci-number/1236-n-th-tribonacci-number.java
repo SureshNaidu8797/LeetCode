@@ -11,6 +11,7 @@ class Solution {
             T1=T2;
             T2=sum;
         }
+        System.gc();
         return sum;
     }
 }
