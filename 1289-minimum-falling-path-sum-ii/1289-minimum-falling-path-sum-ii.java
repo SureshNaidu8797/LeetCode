@@ -1,31 +1,41 @@
 class Solution {
     public int minFallingPathSum(int[][] grid) {
-        int[][] dp = new int[grid.length + 1][grid[0].length + 1];
-        for (int[] arr : dp)
-            Arrays.fill(arr, -1);
-
-        int answer = Integer.MAX_VALUE;
-        for (int col = 0; col < grid.length; col++) {
-            answer = Math.min(answer, helper(0, col, grid, dp));
-        }
-
-        return answer;
+        int n = grid.length;
+        return minFallingPathSum(0,grid).minSum;
     }
 
-    int helper(int row, int col, int[][] grid, int[][] dp) {
-        if (row == grid.length - 1) {
-            return grid[row][col];
-        }
-        if (dp[row][col] != -1)
-            return dp[row][col];
+    private Triplet minFallingPathSum(int row, int[][] grid){
 
-        int ans = Integer.MAX_VALUE;
-        for (int i = 0; i < grid[0].length; i++) {
-            if (i != col) {
-                ans = Math.min(ans, helper(row + 1, i, grid, dp));
+        if(row == grid.length){
+            return new Triplet(0,0,0);
+        }
+
+        Triplet nextRowTriplet = minFallingPathSum(row+1, grid); //trying passing row++
+        Triplet currentTriplet = new Triplet(Integer.MAX_VALUE, Integer.MAX_VALUE, -1);
+
+        for(int col = 0; col<grid[0].length; col++){
+            int sum = grid[row][col] + ((col != nextRowTriplet.minSumIndex) ? nextRowTriplet.minSum : nextRowTriplet.secondMinSum);
+            if(sum <= currentTriplet.minSum){
+                currentTriplet.secondMinSum = currentTriplet.minSum;
+                currentTriplet.minSum = sum;
+                currentTriplet.minSumIndex = col;
+            }else if(sum < currentTriplet.secondMinSum){
+                currentTriplet.secondMinSum = sum;
             }
         }
 
-        return dp[row][col] = ans + grid[row][col];
+        return currentTriplet;
+    }
+}
+
+class Triplet{
+    int minSum;
+    int secondMinSum;
+    int minSumIndex;
+    
+    Triplet(int minSum, int secondMinSum, int minSumIndex){
+        this.minSum = minSum;
+        this.secondMinSum = secondMinSum;
+        this.minSumIndex = minSumIndex;
     }
 }
