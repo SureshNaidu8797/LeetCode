@@ -17,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Array
 |  |
 | ------- |
+| [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/SureshNaidu8797/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/SureshNaidu8797/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Recursion
 |  |
@@ -26,4 +27,8 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/SureshNaidu8797/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
+## Binary Search
+|  |
+| ------- |
+| [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/SureshNaidu8797/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 <!---LeetCode Topics End-->
