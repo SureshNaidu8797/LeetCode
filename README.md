@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Math
 |  |
 | ------- |
+| [1635-number-of-good-pairs](https://github.com/SureshNaidu8797/LeetCode/tree/master/1635-number-of-good-pairs) |
 | [1642-water-bottles](https://github.com/SureshNaidu8797/LeetCode/tree/master/1642-water-bottles) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/SureshNaidu8797/LeetCode/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/SureshNaidu8797/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
@@ -18,6 +19,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/SureshNaidu8797/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
+| [1635-number-of-good-pairs](https://github.com/SureshNaidu8797/LeetCode/tree/master/1635-number-of-good-pairs) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/SureshNaidu8797/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
 ## Recursion
 |  |
@@ -31,4 +33,12 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/SureshNaidu8797/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
+## Hash Table
+|  |
+| ------- |
+| [1635-number-of-good-pairs](https://github.com/SureshNaidu8797/LeetCode/tree/master/1635-number-of-good-pairs) |
+## Counting
+|  |
+| ------- |
+| [1635-number-of-good-pairs](https://github.com/SureshNaidu8797/LeetCode/tree/master/1635-number-of-good-pairs) |
 <!---LeetCode Topics End-->
