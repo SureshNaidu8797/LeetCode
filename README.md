@@ -21,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1408-find-the-smallest-divisor-given-a-threshold](https://github.com/SureshNaidu8797/LeetCode/tree/master/1408-find-the-smallest-divisor-given-a-threshold) |
 | [1635-number-of-good-pairs](https://github.com/SureshNaidu8797/LeetCode/tree/master/1635-number-of-good-pairs) |
 | [1951-find-the-winner-of-the-circular-game](https://github.com/SureshNaidu8797/LeetCode/tree/master/1951-find-the-winner-of-the-circular-game) |
+| [1980-find-unique-binary-string](https://github.com/SureshNaidu8797/LeetCode/tree/master/1980-find-unique-binary-string) |
 ## Recursion
 |  |
 | ------- |
@@ -37,8 +38,17 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [1635-number-of-good-pairs](https://github.com/SureshNaidu8797/LeetCode/tree/master/1635-number-of-good-pairs) |
+| [1980-find-unique-binary-string](https://github.com/SureshNaidu8797/LeetCode/tree/master/1980-find-unique-binary-string) |
 ## Counting
 |  |
 | ------- |
 | [1635-number-of-good-pairs](https://github.com/SureshNaidu8797/LeetCode/tree/master/1635-number-of-good-pairs) |
+## String
+|  |
+| ------- |
+| [1980-find-unique-binary-string](https://github.com/SureshNaidu8797/LeetCode/tree/master/1980-find-unique-binary-string) |
+## Backtracking
+|  |
+| ------- |
+| [1980-find-unique-binary-string](https://github.com/SureshNaidu8797/LeetCode/tree/master/1980-find-unique-binary-string) |
 <!---LeetCode Topics End-->
