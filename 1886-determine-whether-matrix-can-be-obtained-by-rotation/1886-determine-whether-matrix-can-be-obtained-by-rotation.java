@@ -1,16 +1,16 @@
 class Solution {
     public boolean findRotation(int[][] mat, int[][] target) {
-        int n = mat.length;
+        int n = mat.length-1;
         boolean r0 = true, r90 = true, r180 = true, r270 = true;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
+        for (int i = 0; i < n+1; i++) {
+            for (int j = 0; j < n+1; j++) {
                 if(mat[i][j] != target[i][j])
                     r0 = false;
-                if(mat[i][j] != target[j][n - i - 1])
+                if(mat[i][j] != target[j][n - i])
                     r90 = false;
-                if(mat[i][j] != target[n - i - 1][n - j - 1])
+                if(mat[i][j] != target[n - i][n - j])
                     r180 = false;
-                if(mat[i][j] != target[n - j - 1][i])
+                if(mat[i][j] != target[n - j][i])
                     r270 = false;
             }
         }
