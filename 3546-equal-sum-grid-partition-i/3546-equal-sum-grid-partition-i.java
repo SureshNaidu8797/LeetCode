@@ -16,8 +16,7 @@ class Solution {
         for (int j = 0; j < n - 1; j++) {
             for (int i = 0; i < m; i++)
                 sum += grid[i][j];
-            if (sum == target) return true;
         }
-        return false;
+        return sum == target;
     }
 }
